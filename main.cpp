@@ -3,21 +3,22 @@
 #include "konwerterarabski.hpp"
 #include "konwerterrzymski.hpp"
 
+
 using namespace std;
 
 int main()
 {
-    //cout << "Podaj liczbę arabską: ";
+    cout << "Podaj liczbę arabską: ";
     int liczba;
-    //cin >> liczba;
-    liczba = 1204;
+    cin >> liczba;
+    
     Konwerterarabski K(liczba);
-    cout << "Oto liczba rzymska liczby 1204: " << K.result() << endl;
-    if (K.result() == "MCCIV") {
-        cout << "Zamiana przebiegła pomyślnie!" << endl;
-    }
-	Konwerterrzymski J("MCCIV");
-	J.konwertowanie();
-	cout << "Zamiana z powrotem na liczbę arabską " << J.wynik<<endl;	
+    string str2 = K.result();
+    cout << "Oto liczba rzymska liczby : " << str2 << endl;
+
+    Konwerterrzymski J(str2);
+
+    J.konwertowanie();
+    cout << "Zamiana z powrotem na liczbę arabską " << J.wynik<<endl;	
     return 0;
 }

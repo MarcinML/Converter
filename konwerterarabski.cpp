@@ -60,7 +60,7 @@ void Konwerterarabski::dziesietne()
     b = e;
 }
 void Konwerterarabski::setne()
-{
+{ 
     zamiana_na_rzymskie(m, dd, cc, liczba_setek);
     c = e;
 }

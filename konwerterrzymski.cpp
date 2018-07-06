@@ -1,5 +1,5 @@
 #include "konwerterrzymski.hpp"
-#include<string>
+#include <string>
 
 
 using namespace std;
